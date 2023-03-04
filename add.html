@@ -13,9 +13,10 @@
 </head>
 <body>
         <!--bg-->
-        <div class="page-bg"></div>
+      <div class="page-bg"></div>
+     
 <!--nav bar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top"  >
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#" ><img src="images/br.jpg" class="logo justify-content-center img-circle" >
                   BLOG</a>
@@ -49,7 +50,8 @@
                             <input type="text" class="form-control" placeholder="Search">
                             <button type="button" class="btn btn-secondary"><i class="bi-search"></i></button>
                         </div>
-                    </form>                
+                    </form>  
+                                           
                 </div>
               </div>
             </div>
@@ -60,12 +62,13 @@
 
 
 
+
 <!--modal login popup-->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel" validate>Login Details</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Login Details</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -83,120 +86,93 @@
             </div>
           </form>
         </div>
-        
-        </div>
+      </div>
     </div>
   </div>
 <!--modal end-->
 
 
+<!--add detail-->
 
-
-
-
-<!--carousel-->
-
-<div id="carouselExampleControls" class="carousel slide mt-5 " data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/blog2.jpg" class="d-block" >
+<div class="container a">
+    <form name="myForm" class="row  g-3 was-validated" onsubmit="return submitData()" action="view.html" method="GET">
+       <legend>Author Details</legend>
+      <div class="col-md-4">
+        <label for="validationDefault01" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="validationDefault01" name="fname" required>
+        <div class="invalid-feedback">Please enter first Name</div>
       </div>
-      <div class="carousel-item">
-        <img src="images/blog3.jpg" class="d-block"  alt="...">
+      <div class="col-md-4">
+        <label for="validationDefault02" class="form-label">Last name</label>
+        <input type="text" name="lname" class="form-control" id="validationDefault02"  required>
       </div>
-      <div class="carousel-item">
-        <img src="images/post.jpg" class="d-block"  alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/blog4.jpg" class="d-block"  alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/blog5.jpg" class="d-block"  alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-<!--end of carousel-->
-
-
-
-
-
-<!--accordian-->
-<div class="container b">
-    <div class="row justify-content-center ">
-        <div  class="col-lg-3 col-md-4 col-sm-6">
-<!---->
-    <div class="accordion-item" >
-      <h2 class="accordion-header" id="panelsStayOpen-headingOne" >
-        <button class="accordion-button text-white bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-          SPORTS
-        </button>
-      </h2>
-      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-        <div class="accordion-body">   
-            Sport is a significant part of life in India.
-            The country has a very long sports history, with sports being a part of tradition,
-            culture, finance and entertainment.
-            People in India closely follow various sports and enthusiastically participate in them.       
-            <div><a href="view_blog.html">View Blog</a></div>
-            
+      <div class="col-md-4">
+        <label for="validationDefaultUsername" class="form-label">Username</label>
+        <div class="input-group">
+          <span class="input-group-text" id="inputGroupPrepend2">@gmail.com <i class="fa fa-github"></i></span>
+         
+          <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+         <button class="btn btn-success dropdown-toggle"  data-bs-toggle = "dropdown" type="button">Verify</button>
+        <ul class = "dropdown-menu">
+          <li><a class= "dropdown-item">Link</a></li>
+          <li><a class= "dropdown-item">Link</a></li>
+        </ul>
         </div>
       </div>
-    </div>
-</div>
-<div class="col-lg-3 col-md-4 col-sm-6">
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-        <button class="accordion-button collapsed text-white bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-        NEWS
-        </button>
-      </h2>
-      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-        <div class="accordion-body">
-          <strong>News about the company</strong>
-          Tech industry one of the most spoilt in the mode of work: Rishad Premji
-          Indian IT companies are facing challenges in re-establishing the work-from-office model 
-          of pre-pandemic times
-            <div><a href="view_blog.html"> View Blog</a></div>
-
-        </div>
+      <div class="col-md-6">
+        <label for="validationDefault03" class="form-label">City</label>
+        <input type="text" class="form-control" id="validationDefault03" required>
       </div>
-    </div>
-</div>
-<div class="col-lg-3 col-md-4 col-sm-6">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-        <button class="accordion-button collapsed text-white bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-         BLOG INFO
-        </button>
-      </h2>
-      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-        <div class="accordion-body">
-          <strong>BLOG INFORMATION</strong><br>
-          A blog is an informational website published on the World Wide Web consisting of discrete,
-          often informal diary-style text entries. Posts are typically displayed in reverse 
-          chronological order so that the most recent post appears first, at the top of the web page.
-        <div><a href="view_blog.html">View Blog</a></div>
-        </div>
+      <div class="col-md-3">
+        <label for="validationDefault04" class="form-label">State</label>
+        <select class="form-select" id="validationDefault04" required>
+          <option selected disabled value="">Choose...</option>
+          <option>...</option>
+        </select>
       </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-<!--end of accordion-->
+      <div class="col-md-3">
+        <label for="validationDefault05" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="validationDefault05" required>
+      </div>
 
 
+      <legend>Blog Details</legend>
 
+      <div class="form-floating mb-3 mt-3">
+          <input type="text" class="form-control" id="title" required placeholder="Enter Title" name="title">
+          <label for="title">Blog Title</label>
+        </div>
+
+        <div class="form-floating mb-3 mt-3">
+          <textarea class="form-control" rows = "10" id="description" name="description" placeholder="Content goes here" required></textarea>
+          <label for="description">Blog Text</label>
+        </div>
+        <div class="form-floating mb-3 mt-3">
+          
+              <input type="file" class="form-control" 
+              id="thumbnail" name="thumbnail" 
+              accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" required>
+              <label for="thumbnail">Upload Image:</label>
+      </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+
+      <div class="col-12">
+        <button class="btn btn-success" type="submit" >Submit form</button>
+      </div>  
+
+      
+    </form>
+</div>
+
+<!--end of add details-->
 
 
 <!--footer-->
@@ -220,8 +196,9 @@
       </li>
     </ul>
   </footer>
-  <!--footer end-->
-
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src = "js/formSubmit.js"></script>
 
   
 </body>
