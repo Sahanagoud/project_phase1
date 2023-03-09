@@ -33,6 +33,7 @@
 }
 .accordion-body{
     content-visibility:auto;
+    padding-bottom: 60px;
 }
 .accordion-item{
     width:auto;
