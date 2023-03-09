@@ -60,7 +60,17 @@
     padding-top:20px;
     padding-bottom:10px;
 }
-.b{
+/*.b{
     padding-top:10px;
     padding-bottom:300px;
+}*/
+
+.f {
+ 
+    width: 100%;
+    height: 2.5rem;
+}
+.container{
+    content-visibility: auto;
+  
 }
