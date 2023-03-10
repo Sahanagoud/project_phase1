@@ -5,6 +5,7 @@ class BlogData{
         this.title = title;
         this.description = description;
         this.thumbnail = thumbnail;
+        
     }
 }
 All_Data = new Array();    
