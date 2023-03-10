@@ -6,3 +6,5 @@ view blog page is view.html
 jaascript file are
 formSubmit.js gets submit information from add.html page
 getData.js gives the information to view.html 
+all the css elements are added in styles.css file
+all the images are in the images folder
